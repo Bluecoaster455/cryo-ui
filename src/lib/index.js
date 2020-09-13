@@ -1,2 +1,2 @@
-import App from './App';
-export default App
+import Cryo from './App';
+export default Cryo;

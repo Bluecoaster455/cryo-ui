@@ -10,11 +10,11 @@ Add the css and the script files to your project:
 <html>
   <head>
     ...
-    <link href="/path/to/cryo-ui.min.css" type="text/css" rel="stylesheet"/>
+    <link href="/path/to/index.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
     ...
-    <script src="/path/to/cryo-ui.min.js" type="text/javascript"></script>
+    <script src="/path/to/index.js" type="text/javascript"></script>
   </body>
 </html>
 ```
@@ -24,13 +24,20 @@ Add the css and the script files to your project:
 
 ```javascript
 // Import CryoUI
-window.CryoUI = CryoUI.default;
+window.CryoUI = new CryoUI.default();
 
 // Freeze the entire user interface
 CryoUI.freeze();
 
 // Unfreeze all the user interface
 CryoUI.unfreeze();
+
+// Change de default options!
+CryoUI.defaultOptions = {
+  selector: "#my-selector",
+  template: `<div style="font-weight:bold">My app</div><div>{{text}}</div>`,
+  text: "Loading..."
+}
 ```
 
 

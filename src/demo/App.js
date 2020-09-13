@@ -1,10 +1,12 @@
 import './css/App.css';
 import Lib from './../lib';
 
-class App {
+class Cryo {
   constructor(){
 
-    Lib.defaultOptions.template = `
+    let cryo = new Lib();
+
+    cryo.defaultOptions.template = `
       <div class="cryo-default-style">
         <div style="font-weight: bold">PLEASE WAIT!</div>
         <div style="margin-top: 10px">{{text}}</div>
@@ -12,24 +14,24 @@ class App {
     `
 
     document.querySelector("#demo-freeze-5-seconds").addEventListener("click", function(){
-      Lib.freeze();
+      cryo.freeze();
       setTimeout(() => {
-        Lib.unfreeze();
+        cryo.unfreeze();
       }, 5000);
     });
 
     document.querySelector("#demo-freeze-forever").addEventListener("click", function(){
-      Lib.defaultOptions.template = `
+      cryo.defaultOptions.template = `
         <div>{{text}}</div>
       `
 
-      Lib.freeze({
+      cryo.freeze({
         text: "Unfortunately, you need to refresh the page to unfreeze :("
       });
     });
 
     document.querySelector("#demo-freeze-div").addEventListener("click", function(){
-      Lib.freeze({
+      cryo.freeze({
         selector: "#to-freeze-demo",
         template: `
         <div class="cryo-default-style-2">
@@ -42,7 +44,7 @@ class App {
 
     document.querySelector("#demo-freeze-div-delay").addEventListener("click", function(){
       setTimeout(() => {
-        Lib.freeze({
+        cryo.freeze({
           selector: "#to-freeze-demo",
           template: `
           <div class="cryo-default-style">
@@ -55,10 +57,10 @@ class App {
     });
 
     document.querySelector("#demo-unfreeze-div").addEventListener("click", function(){
-      Lib.unfreeze("#to-freeze-demo");
+      cryo.unfreeze("#to-freeze-demo");
     });
 
   }
 }
 
-export default App;
+export default Cryo;
