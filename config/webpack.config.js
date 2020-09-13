@@ -200,6 +200,7 @@ module.exports = function(webpackEnv) {
       publicPath: paths.publicUrlOrPath,
       library: "CryoUI",
       libraryTarget: 'umd',
+      libraryExport: 'default',
       umdNamedDefine: true,
       // Point sourcemap entries to original disk location (format as URL on Windows)
       devtoolModuleFilenameTemplate: isEnvProduction

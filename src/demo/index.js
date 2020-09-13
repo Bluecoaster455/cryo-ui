@@ -1,2 +1,2 @@
-import Cryo from './App';
-new Cryo();
+import { Demo } from './App';
+new Demo();

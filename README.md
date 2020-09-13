@@ -23,9 +23,6 @@ Add the css and the script files to your project:
 ### Basic
 
 ```javascript
-// Import CryoUI
-window.CryoUI = new CryoUI.default();
-
 // Freeze the entire user interface
 CryoUI.freeze();
 

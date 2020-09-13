@@ -1,2 +1,5 @@
 import Cryo from './App';
-export default Cryo;
+
+let instance = new Cryo();
+
+export default instance;
