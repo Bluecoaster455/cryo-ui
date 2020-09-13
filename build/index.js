@@ -1,6 +1,6 @@
 /*!
  * 
- *   cryo-ui v0.1.1
+ *   cryo-ui v0.1.2
  *   https://github.com/Bluecoaster455/cryo-ui
  * 
  *   Copyright (c) Bluecoaster455 (https://github.com/Bluecoaster455)
