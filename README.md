@@ -1,4 +1,4 @@
-# Cryo UI
+# ❄ Cryo UI
 A vanilla JavaScript library to freeze certain elements of the user interface.
 
 Demo soon...
@@ -24,7 +24,7 @@ Add the css and the script files to your project:
 
 ```javascript
 // Import CryoUI
-const CryoUI = CryoUI.default;
+window.CryoUI = CryoUI.default;
 
 // Freeze the entire user interface
 CryoUI.freeze();
@@ -39,7 +39,7 @@ These options are passed inside the CryoUI.freeze(options) function.
 ```javascript
 var options = {
   selector: "#my-selector", // Element to freeze
-  template: "<div>Some general template used inside the cryo wrapper.</div>", // Template to use as the wrapper for the text to display.
+  template: "<div>My loader</div><div>{{text}}</div>", // Template to use as the wrapper for the text to display.
   text: "Loading..." // Text to display in the content.
 }
 ```
