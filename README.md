@@ -1,9 +1,11 @@
 # Cryo UI
-Cryo UI is a javascript library to freeze elements of the user interface. No jQuery used.
+A vanilla JavaScript library to freeze certain elements of the user interface.
+
+Demo soon...
 
 ## Installation
 
-Add the css and the script to your project:
+Add the css and the script files to your project:
 ```html
 <html>
   <head>
@@ -21,30 +23,66 @@ Add the css and the script to your project:
 ### Basic
 
 ```javascript
-// Freeze the UI
-FreezeUI();
+// Import CryoUI
+const CryoUI = CryoUI.default;
 
-// Un Freeze the UI 
-UnFreezeUI();
+// Freeze the entire user interface
+CryoUI.freeze();
+
+// Unfreeze all the user interface
+CryoUI.unfreeze();
 ```
 
 
 ## Options
-You can set some options when calling the FreezeUI function.
-
-Param | Type | Default | Details
------------- | ------------- | ------------- | -------------
-text | `string` | Loading | The text to be displayed. 
-selector | `string` | <body> of the document | The loading can be applied only to an element, as long as the element has position absolute or fixed.
+These options are passed inside the CryoUI.freeze(options) function.
+```javascript
+var options = {
+  selector: "#my-selector", // Element to freeze
+  template: "<div>Some general template used inside the cryo wrapper.</div>", // Template to use as the wrapper for the text to display.
+  text: "Loading..." // Text to display in the content.
+}
+```
 
 ### Examples
+
+"instance" is the instatiation of Cryo returned by the CryoUI.freeze() method used to modify it for later freezing or calling instance.unfreeze().
+
 ```javascript
-FreezeUI(); // To simply freeze the whole page
-FreezeUI({ text: 'Custom text' }); // Freeze with a custom text
-FreezeUI({ selector: '.class-name' }); // Freeze a certain component.
-FreezeUI({ selector: '#id-name' }); // The component must have position: fixed or absolute to work
-FreezeUI({ selector: '.component', text: 'Getting there...' }) // Using both options at the same time. 
-UnFreezeUI(); // Will unfreeze any and all options from above
+// Freeze the whole user interface
+var instance = CryoUI.freeze();
+```
+
+```javascript
+// Freeze #my-div
+var instance = CryoUI.freeze({
+  selector: "#my-div"
+});
+```
+
+```javascript
+// Freeze #my-div and put "Please wait..." as the text.
+var instance = CryoUI.freeze({
+  selector: "#my-div",
+  text: "Please wait..."
+});
+```
+
+```javascript
+// Freeze #my-div. The end result in this example will be "<div class="my-custom-styles">Please wait...</div>"
+var instance = CryoUI.freeze({
+  selector: "#my-div",
+  text: "Please wait...",
+  template: `<div class="my-custom-styles">{{text}}</div>`
+});
+```
+
+```javascript
+// Freeze #my-div. The content will the content of #my-template including itself.
+var instance = CryoUI.freeze({
+  selector: "#my-div",
+  template: document.querySelector("#my-template")
+});
 ```
 
 ## Licence

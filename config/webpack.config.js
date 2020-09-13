@@ -186,7 +186,7 @@ module.exports = function(webpackEnv) {
       // There will be one main bundle, and one file per asynchronous chunk.
       // In development, it does not produce real files.
       filename: isEnvProduction
-        ? 'index.js'
+        ? 'cryo-ui.min.js'
         : isEnvDevelopment && 'static/js/bundle.js',
       // TODO: remove this when upgrading to webpack 5
       futureEmitAssets: true,
@@ -609,8 +609,8 @@ module.exports = function(webpackEnv) {
         new MiniCssExtractPlugin({
           // Options similar to the same options in webpackOptions.output
           // both options are optional
-          filename: 'index.css',
-          chunkFilename: 'index.[contenthash:8].chunk.css',
+          filename: 'cryo-ui.min.css',
+          chunkFilename: 'cryo-ui.min.[contenthash:8].chunk.css',
         }),
       // Generate an asset manifest file with the following content:
       // - "files" key: Mapping of all asset filenames to their corresponding
