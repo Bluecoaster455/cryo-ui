@@ -42,7 +42,7 @@ CryoUI.defaultOptions = {
 
 
 ## Options
-These options are passed inside the CryoUI.freeze(options) function.
+These options are passed inside the CryoUI.freeze(options) function. Whatever is passed in the options parameter will merge with the defaultOptions.
 ```javascript
 var options = {
   selector: "#my-selector", // Element to freeze
