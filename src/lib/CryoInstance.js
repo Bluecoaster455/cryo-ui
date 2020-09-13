@@ -29,7 +29,7 @@ export class CryoInstance {
    */
   freeze() {
     let fixed = false;
-    if(this.$element.tagName === "body"){
+    if(this.$element.tagName.toLowerCase() === "body"){
       fixed = true;
     }
 

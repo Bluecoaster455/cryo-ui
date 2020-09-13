@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.cryo-wrapper .fixed {
+.cryo-wrapper.fixed {
   position: fixed;
 }
 
