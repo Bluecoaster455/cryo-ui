@@ -23,7 +23,11 @@
   },
   "homepage": "https://github.com/Bluecoaster455/cryo-ui",
   "keywords": [
-    "library"
+    "library",
+    "frontend",
+    "javascript",
+    "vanilla",
+    "freeze"
   ],
   "license": "MIT",
   "devDependencies": {
