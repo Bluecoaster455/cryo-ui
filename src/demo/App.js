@@ -18,16 +18,6 @@ export class Demo {
       }, 5000);
     });
 
-    document.querySelector("#demo-freeze-forever").addEventListener("click", function(){
-      CryoUI.defaultOptions.template = `
-        <div>{{text}}</div>
-      `
-
-      CryoUI.freeze({
-        text: "Unfortunately, you need to refresh the page to unfreeze :("
-      });
-    });
-
     document.querySelector("#demo-freeze-div").addEventListener("click", function(){
       CryoUI.freeze({
         selector: "#to-freeze-demo",
