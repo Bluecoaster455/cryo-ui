@@ -1,7 +1,7 @@
 # ❄ Cryo UI
 A vanilla JavaScript library to freeze certain elements of the user interface.
 
-Demo soon...
+Demo: [http://bluecoaster455.github.io/cryo-ui/demo](http://bluecoaster455.github.io/cryo-ui/demo)
 
 ## Installation
 

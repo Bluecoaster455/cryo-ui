@@ -1,5 +1,5 @@
-import App from './../App';
+import Cryo from './../App';
 
 it('renders without crashing', () => {
-  new App();
+  let instance = new Cryo();
 });
