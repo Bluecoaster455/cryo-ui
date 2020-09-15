@@ -3,30 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <title>CryoUI - Freeze elements in vanilla JavaScript!</title>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    
+    <meta name="description" content="CryoUI is a vanilla JavaScript library to freeze certain elements of the user interface.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Vanilla, Cryo, UI, User, Interface, Freeze, Library, Plugin">
+    <meta name="author" content="Bluecoaster455">
+    
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
   </head>
   <body>
     <div id="main">
 
-      <h1 style="padding-top: 100px; font-size: 100px; font-weight: 600; letter-spacing: 5px;">CryoUI</h1>
+      <h1>CryoUI</h1>
 
       <h3 class="mt-1">A vanilla JavaScript library to freeze certain elements of the user interface.</h3>
 
       <!-- Demo button for global freezing -->
       <div class="mt-5">
-        <button id="demo-freeze-5-seconds" class="btn">Freeze page for 5 seconds!</button>
+        <a id="demo-freeze-5-seconds" class="btn">Freeze page for 5 seconds!</a>
         <a class="btn" href="https://github.com/Bluecoaster455/cryo-ui" target="_blank"><i class="fab fa-github"></i> Github</a>
       </div>
       
       <!-- Installation -->
       <div class="mt-5">
-        <h2 class="text-left">Installation</h2>
-        <p class="text-left">asd</p>
+        <h2 class="text-left">Documentation</h2>
+        <h4 class="text-left mt-1">1. Installation</h4>
+        <p class="text-left mt-1 mb-1">In your HTML page, include the CSS and JavaScript files in the respective sections like shown below.</p>
         <div>
-          <p class="codepen" data-height="260" data-theme-id="dark" data-default-tab="html" data-preview="false" data-user="bluecoaster455" data-slug-hash="eYZKdPm" style="height: 260px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="eYZKdPm">
+          <p class="codepen" data-preview="true" data-height="300" data-theme-id="dark" data-default-tab="html" data-preview="false" data-user="bluecoaster455" data-slug-hash="eYZKdPm" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="eYZKdPm">
             <span>See the Pen <a href="https://codepen.io/bluecoaster455/pen/eYZKdPm">
             eYZKdPm</a> by Bluecoaster455 (<a href="https://codepen.io/bluecoaster455">@bluecoaster455</a>)
             on <a href="https://codepen.io">CodePen</a>.</span>
@@ -36,33 +42,75 @@
       </div>
 
       <!-- Example with code pen -->
-      <div class="mt-5" style="text-align: center;">
+      <div class="mt-5">
+
+        <h4 class="text-left mt-1">2. Usage</h4>
+
+        <p class="text-left mt-1 mb-1">Here are some examples of CryoUI in action!</p>
+        <p class="text-left mt-1 mb-1">Freeze the whole screen by clicking a button (You can freeze without buttons of course!).</p>
         <div style="width: 100%; display: inline-block;">
-          <p class="codepen" data-height="450" data-theme-id="dark" data-default-tab="js,result" data-user="bluecoaster455" data-slug-hash="NWNzRgB" data-preview="true" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Freeze the whole page">
+          <p class="codepen" data-height="450" data-theme-id="dark" data-default-tab="js,result" data-user="bluecoaster455" data-slug-hash="NWNzRgB" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Freeze the whole page">
             <span>See the Pen <a href="https://codepen.io/bluecoaster455/pen/NWNzRgB">
-            Freeze the whole page</a> by Bluecoaster455 (<a href="https://codepen.io/bluecoaster455">@bluecoaster455</a>)
+            CryoUI - Freeze the whole page</a> by Bluecoaster455 (<a href="https://codepen.io/bluecoaster455">@bluecoaster455</a>)
             on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
         </div>
-      </div>
 
-      <!-- Test subject box -->
+        <p class="text-left mt-2">Freeze a specific element in the document using selectors.</p>
+        <div style="width: 100%; display: inline-block;">
+          <p class="codepen" data-height="450" data-theme-id="dark" data-default-tab="js,result" data-user="bluecoaster455" data-slug-hash="MWyXxbv" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CryoUI - Freeze an element like a div!">
+            <span>See the Pen <a href="https://codepen.io/bluecoaster455/pen/MWyXxbv">
+            CryoUI - Freeze an element like a div!</a> by Bluecoaster455 (<a href="https://codepen.io/bluecoaster455">@bluecoaster455</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+        </div>
+
+        <p class="text-left mt-2">Customize your CryoUI div using a template!</p>
+        <div style="width: 100%; display: inline-block;">
+          <p class="codepen" data-height="450" data-theme-id="dark" data-default-tab="js,result" data-user="bluecoaster455" data-slug-hash="RwaJdZb" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CryoUI - Customize your CryoUI div with HTML">
+            <span>See the Pen <a href="https://codepen.io/bluecoaster455/pen/RwaJdZb">
+            CryoUI - Customize your CryoUI div with HTML</a> by Bluecoaster455 (<a href="https://codepen.io/bluecoaster455">@bluecoaster455</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+        </div>
+
+      </div>
+      
+      <!-- Options -->
       <div class="mt-5">
-        <div id="to-freeze-demo" class="box" style="width: 500px; max-width: 100%;">
-          <div style="padding: 20px;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <div class="mt-1"><input type="text" class="form-control"></div>
-          </div>
+        <h4 class="text-left mt-1">3. Options</h4>
+        <p class="text-left mt-1 mb-1">
+          Here are the different options you can pass to <code>CryoUI.freeze()</code>. 
+          You can change the default options by modifying <code>CryoUI.defaultOptions</code>
+        </p>
+        <ul class="text-left mt-1 mb-1">
+          <li>- selector: What element is going to be freezing using a CSS selector.</li>
+          <li>- text: The loading text. This is used for the template</li>
+          <li>- template: The design around the text, which include everything within the backdrop.</li>
+        </ul>
+        <div>
+          <p class="codepen" data-preview="true" data-height="370" data-theme-id="dark" data-default-tab="js" data-user="bluecoaster455" data-slug-hash="oNxyVpO" style="height: 370px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CryoUI - Available options">
+            <span>See the Pen <a href="https://codepen.io/bluecoaster455/pen/oNxyVpO">
+            CryoUI - Available options</a> by Bluecoaster455 (<a href="https://codepen.io/bluecoaster455">@bluecoaster455</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
         </div>
       </div>
       
-      <!-- Buttons for the box freezing -->
+      <!-- Bugs -->
       <div class="mt-5">
-        <button id="demo-freeze-div" class="btn">Freeze the box!</button>
-        <button id="demo-freeze-div-delay" class="btn">Freeze the box with 2 second delay</button>
-        <button id="demo-unfreeze-div" class="btn">Unfreeze box</button>
+        <h4 class="text-left mt-1">4. Bugs or questions?</h4>
+        <div class="text-left mt-2">
+          <a href="https://github.com/Bluecoaster455/cryo-ui/issues" class="btn" target="_blank"><i class="fab fa-github"></i> Submit issue</a>
+        </div>
+        <div style="padding-bottom: 80px;"></div>
       </div>
 
+    </div>
+
+    <div class="text-center" style="padding: 10px; background-color:rgb(6, 131, 131); border-top: 6px solid white; font-size: 20px;">
+      Made by Bluecoaster455
     </div>
   </body>
 </html>

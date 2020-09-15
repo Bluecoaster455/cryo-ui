@@ -1,4 +1,4 @@
-import './css/App.css';
+import './scss/styles.scss';
 import CryoUI from './../lib';
 
 export class Demo {
@@ -17,36 +17,5 @@ export class Demo {
         CryoUI.unfreeze();
       }, 5000);
     });
-
-    document.querySelector("#demo-freeze-div").addEventListener("click", function(){
-      CryoUI.freeze({
-        selector: "#to-freeze-demo",
-        template: `
-        <div class="cryo-default-style-2">
-          {{text}}
-        </div>
-        `,
-        text: `This element is now frozen! Click the "Unfreeze box" button to unfreeze it!`
-      });
-    });
-
-    document.querySelector("#demo-freeze-div-delay").addEventListener("click", function(){
-      setTimeout(() => {
-        CryoUI.freeze({
-          selector: "#to-freeze-demo",
-          template: `
-          <div class="cryo-default-style">
-            {{text}}
-          </div>
-          `,
-          text: `This element is now frozen! Click the "Unfreeze" button to unfreeze it!`
-        });
-      }, 2000);
-    });
-
-    document.querySelector("#demo-unfreeze-div").addEventListener("click", function(){
-      CryoUI.unfreeze("#to-freeze-demo");
-    });
-
   }
 }

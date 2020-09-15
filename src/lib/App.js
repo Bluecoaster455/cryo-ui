@@ -1,6 +1,6 @@
 import { CryoInstance } from './CryoInstance';
 import deepmerge from 'deepmerge';
-import './css/App.css';
+import './scss/app.scss';
 
 class Cryo {
   instances = {};
