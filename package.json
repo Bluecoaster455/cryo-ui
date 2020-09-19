@@ -1,6 +1,6 @@
 {
-  "name": "cryo-ui",
-  "version": "0.1.9",
+  "name": "@bluecoaster455/cryo-ui",
+  "version": "0.2.0",
   "description": "A vanilla JavaScript library to freeze certain elements of the user interface.",
   "main": "build/index.js",
   "scripts": {
@@ -27,7 +27,8 @@
     "frontend",
     "javascript",
     "vanilla",
-    "freeze"
+    "freeze",
+    "plugin"
   ],
   "license": "MIT",
   "devDependencies": {
